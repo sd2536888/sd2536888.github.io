@@ -3,17 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | AsakiuGui blog</title>
+  <title>hexo增加多说评论 | AsakiuGui blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="AsakiuGui blog">
-<meta property="og:url" content="http://yoursite.com/archives/">
+  <meta name="description" content="注册[多说]http://duoshuo.com/
+网上找了很多资料,都说编辑themes/landscape/layout/_partial/comment.ejs就可以了,但是我发现landscape模板中根本没有没有这个文件= =
+于是找到themes/landscape/layout/_partial/article.ejs中,文件结尾加入
+123&lt;% if (!index) { %">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo增加多说评论">
+<meta property="og:url" content="http://yoursite.com/2014/09/17/hexo增加多说评论/">
 <meta property="og:site_name" content="AsakiuGui blog">
-<meta property="og:description">
+<meta property="og:description" content="注册[多说]http://duoshuo.com/
+网上找了很多资料,都说编辑themes/landscape/layout/_partial/comment.ejs就可以了,但是我发现landscape模板中根本没有没有这个文件= =
+于是找到themes/landscape/layout/_partial/article.ejs中,文件结尾加入
+123&lt;% if (!index) { %">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="AsakiuGui blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="hexo增加多说评论">
+<meta name="twitter:description" content="注册[多说]http://duoshuo.com/
+网上找了很多资料,都说编辑themes/landscape/layout/_partial/comment.ejs就可以了,但是我发现landscape模板中根本没有没有这个文件= =
+于是找到themes/landscape/layout/_partial/article.ejs中,文件结尾加入
+123&lt;% if (!index) { %">
 
   
     <link rel="alternative" href="/atom.xml" title="AsakiuGui blog" type="application/atom+xml">
@@ -66,9 +75,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-hexo增加多说评论" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-hexo增加多说评论" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2014/09/17/hexo增加多说评论/" class="article-date">
   <time datetime="2014-09-17T09:15:44.000Z" itemprop="datePublished">9月 17 2014</time>
@@ -85,8 +92,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/09/17/hexo增加多说评论/">hexo增加多说评论</a>
+    <h1 class="article-title" itemprop="name">
+      hexo增加多说评论
     </h1>
   
 
@@ -119,143 +126,36 @@
     </footer>
   </div>
   
-</article>
-
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-mysql安装" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/09/17/mysql安装/" class="article-date">
-  <time datetime="2014-09-17T07:35:19.000Z" itemprop="datePublished">9月 17 2014</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/mysql/">mysql</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/09/17/mysql安装/">CentOs下yum安装mysql</a>
-    </h1>
+    <a href="/2014/09/17/mysql安装/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">CentOs下yum安装mysql</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="参考资料:">参考资料:</h2>
-<p><a href="http://dev.mysql.com/doc/mysql-yum-repo-quick-guide/en/" target="_blank" rel="external">http://dev.mysql.com/doc/mysql-yum-repo-quick-guide/en/</a><br><a href="http://dev.mysql.com/doc/refman/5.6/en/linux-installation-yum-repo.html" target="_blank" rel="external">http://dev.mysql.com/doc/refman/5.6/en/linux-installation-yum-repo.html</a></p>
-<h2 id="下载rpm">下载rpm</h2>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root<span class="variable">@iZ23joghibeZ</span> ~]<span class="comment"># wget http://dev.mysql.com/get/mysql-community-release-el6-5.noarch.rpm</span></div></pre></td></tr></table></figure>
-
-<h2 id="增加yum源">增加yum源</h2>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root<span class="variable">@iZ23joghibeZ</span> ~]<span class="comment"># sudo rpm -Uvh mysql-community-release-el6-5.noarch.rpm</span></div></pre></td></tr></table></figure>
-
-<h2 id="显示mysql可用仓库">显示mysql可用仓库</h2>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">[root@iZ23joghibeZ ~]# yum repolist all | <span class="keyword">grep</span> mysql</div><div class="line">mysql-connectors-community        MySQL Connectors Community      enabled:    <span class="number">10</span></div><div class="line">mysql-connectors-community-<span class="keyword">source</span> MySQL Connectors Community - So disabled</div><div class="line">mysql-tools-community             MySQL Tools Community           enabled:    <span class="number">12</span></div><div class="line">mysql-tools-community-<span class="keyword">source</span>      MySQL Tools Community - <span class="keyword">Source</span>  disabled</div><div class="line">mysql55-community                 MySQL <span class="number">5.5</span> Community Server      disabled</div><div class="line">mysql55-community-<span class="keyword">source</span>          MySQL <span class="number">5.5</span> Community Server - So disabled</div><div class="line">mysql56-community                 MySQL <span class="number">5.6</span> Community Server      enabled:    <span class="number">47</span></div><div class="line">mysql56-community-<span class="keyword">source</span>          MySQL <span class="number">5.6</span> Community Server - So disabled</div><div class="line">mysql57-community-dmr             MySQL <span class="number">5.7</span> Community Server Deve disabled</div><div class="line">mysql57-community-dmr-<span class="keyword">source</span>      MySQL <span class="number">5.7</span> Community Server Deve disabled</div></pre></td></tr></table></figure>
-
-<h2 id="修改mysql安装版本(默认不用修改)">修改mysql安装版本(默认不用修改)</h2>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root<span class="variable">@iZ23joghibeZ</span> ~]<span class="comment"># vim /etc/yum.repos.d/mysql-community.repo</span></div></pre></td></tr></table></figure>
-
-<h2 id="检查安装的mysql版本">检查安装的mysql版本</h2>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[root<span class="variable">@iZ23joghibeZ</span> ~]<span class="comment"># yum repolist enabled | grep mysql</span></div><div class="line">mysql-connectors-community  <span class="constant">MySQL</span> <span class="constant">Connectors</span> <span class="constant">Community</span>                       <span class="number">10</span></div><div class="line">mysql-tools-community       <span class="constant">MySQL</span> <span class="constant">Tools</span> <span class="constant">Community</span>                            <span class="number">12</span></div><div class="line">mysql56-community           <span class="constant">MySQL</span> <span class="number">5.6</span> <span class="constant">Community</span> <span class="constant">Server</span>                       <span class="number">47</span></div></pre></td></tr></table></figure>
-
-<h2 id="安装mysql">安装mysql</h2>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum <span class="operator"><span class="keyword">install</span> mysql-community-<span class="keyword">server</span></span></div></pre></td></tr></table></figure>
-
-<p>然后2次<code>y</code>就可以啦<br>到这里安装已经完成了</p>
-<h2 id="开启mysql">开启mysql</h2>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root<span class="variable">@iZ23joghibeZ</span> ~]<span class="comment"># sudo service mysqld start</span></div></pre></td></tr></table></figure>
-
-<h2 id="查看mysql状态">查看mysql状态</h2>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root<span class="variable">@iZ23joghibeZ</span> ~]<span class="comment"># sudo service mysqld status</span></div></pre></td></tr></table></figure>
-
-<h2 id="停止mysql">停止mysql</h2>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root<span class="variable">@iZ23joghibeZ</span> ~]<span class="comment"># sudo service mysqld stop</span></div></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/09/17/mysql安装/" data-id="9x3iyx3gnqccl64g" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CentOs/">CentOs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/yum/">yum</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
 
 
 
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/08/28/hello-world/" class="article-date">
-  <time datetime="2014-08-28T02:50:15.000Z" itemprop="datePublished">8月 28 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/08/28/hello-world/">Hello World</a>
-    </h1>
-  
+	<div class="ds-thread" data-thread-key="post-hexo增加多说评论" data-title="hexo增加多说评论" data-url="/2014/09/17/hexo增加多说评论/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"sd2536888"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/08/28/hello-world/" data-id="ra49h3r9i6h841kh" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-
-  
-  
 </section>
         
           <aside id="sidebar">
