@@ -95,7 +95,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>注册<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a></p>
-<p>网上找了很多资料,都说编辑<code>themes/landscape/layout/_partial/comment.ejs</code>就可以了,但是我发现landscape模板中根本没有没有这个文件= =</p>
+<p>网上找了很多资料,都说编辑<code>themes/landscape/layout/_partial/comment.ejs</code>就可以了,但是我发现landscape主题中根本没有没有这个文件= =</p>
 <p>于是找到<code>themes/landscape/layout/_partial/article.ejs</code>中,文件结尾加入</p>
 <figure class="highlight nodejs"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (!index) { <span class="variable">%&gt;</span></div><div class="line">	&lt;<span class="variable">%-</span> partial(<span class="string">'comment'</span>) <span class="variable">%&gt;</span></div><div class="line">&lt;% } <span class="variable">%&gt;</span></div></pre></td></tr></table></figure>
 
