@@ -68,86 +68,14 @@
       <div class="outer">
         <section id="main">
   
-    <article id="photo-My-Gallery" class="article article-type-photo" itemscope itemprop="blogPost">
+    <article id="post-mysql安装" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/08/28/My-Gallery/" class="article-date">
-  <time datetime="2014-08-28T03:55:18.000Z" itemprop="datePublished">8月 28 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/08/28/My-Gallery/">My Gallery</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/08/28/My-Gallery/" data-id="gi1mokew5pkazk9k" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="photo-My-Gallery" class="article article-type-photo" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/08/28/My-Gallery/" class="article-date">
-  <time datetime="2014-08-28T03:55:18.000Z" itemprop="datePublished">8月 28 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/08/28/My-Gallery/">My Gallery</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/08/28/My-Gallery/" data-id="bxi971rl6zh1cat6" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/08/28/test/" class="article-date">
-  <time datetime="2014-08-28T03:51:29.000Z" itemprop="datePublished">8月 28 2014</time>
+    <a href="/2014/09/17/mysql安装/" class="article-date">
+  <time datetime="2014-09-17T07:35:19.000Z" itemprop="datePublished">9月 17 2014</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Diary/">Diary</a>
+    <a class="article-category-link" href="/categories/mysql/">mysql</a>
   </div>
 
   </div>
@@ -158,7 +86,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2014/08/28/test/">新文章</a>
+      <a class="article-title" href="/2014/09/17/mysql安装/">CentOs下yum安装mysql</a>
     </h1>
   
 
@@ -166,51 +94,45 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="参考资料:">参考资料:</h2>
+<p><a href="http://dev.mysql.com/doc/mysql-yum-repo-quick-guide/en/" target="_blank" rel="external">http://dev.mysql.com/doc/mysql-yum-repo-quick-guide/en/</a><br><a href="http://dev.mysql.com/doc/refman/5.6/en/linux-installation-yum-repo.html" target="_blank" rel="external">http://dev.mysql.com/doc/refman/5.6/en/linux-installation-yum-repo.html</a></p>
+<h2 id="下载rpm">下载rpm</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root<span class="variable">@iZ23joghibeZ</span> ~]<span class="comment"># wget http://dev.mysql.com/get/mysql-community-release-el6-5.noarch.rpm</span></div></pre></td></tr></table></figure>
+
+<h2 id="增加yum源">增加yum源</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root<span class="variable">@iZ23joghibeZ</span> ~]<span class="comment"># sudo rpm -Uvh mysql-community-release-el6-5.noarch.rpm</span></div></pre></td></tr></table></figure>
+
+<h2 id="显示mysql可用仓库">显示mysql可用仓库</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">[root@iZ23joghibeZ ~]# yum repolist all | <span class="keyword">grep</span> mysql</div><div class="line">mysql-connectors-community        MySQL Connectors Community      enabled:    <span class="number">10</span></div><div class="line">mysql-connectors-community-<span class="keyword">source</span> MySQL Connectors Community - So disabled</div><div class="line">mysql-tools-community             MySQL Tools Community           enabled:    <span class="number">12</span></div><div class="line">mysql-tools-community-<span class="keyword">source</span>      MySQL Tools Community - <span class="keyword">Source</span>  disabled</div><div class="line">mysql55-community                 MySQL <span class="number">5.5</span> Community Server      disabled</div><div class="line">mysql55-community-<span class="keyword">source</span>          MySQL <span class="number">5.5</span> Community Server - So disabled</div><div class="line">mysql56-community                 MySQL <span class="number">5.6</span> Community Server      enabled:    <span class="number">47</span></div><div class="line">mysql56-community-<span class="keyword">source</span>          MySQL <span class="number">5.6</span> Community Server - So disabled</div><div class="line">mysql57-community-dmr             MySQL <span class="number">5.7</span> Community Server Deve disabled</div><div class="line">mysql57-community-dmr-<span class="keyword">source</span>      MySQL <span class="number">5.7</span> Community Server Deve disabled</div></pre></td></tr></table></figure>
+
+<h2 id="修改mysql安装版本(默认不用修改)">修改mysql安装版本(默认不用修改)</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root<span class="variable">@iZ23joghibeZ</span> ~]<span class="comment"># vim /etc/yum.repos.d/mysql-community.repo</span></div></pre></td></tr></table></figure>
+
+<h2 id="检查安装的mysql版本">检查安装的mysql版本</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[root<span class="variable">@iZ23joghibeZ</span> ~]<span class="comment"># yum repolist enabled | grep mysql</span></div><div class="line">mysql-connectors-community  <span class="constant">MySQL</span> <span class="constant">Connectors</span> <span class="constant">Community</span>                       <span class="number">10</span></div><div class="line">mysql-tools-community       <span class="constant">MySQL</span> <span class="constant">Tools</span> <span class="constant">Community</span>                            <span class="number">12</span></div><div class="line">mysql56-community           <span class="constant">MySQL</span> <span class="number">5.6</span> <span class="constant">Community</span> <span class="constant">Server</span>                       <span class="number">47</span></div></pre></td></tr></table></figure>
+
+<h2 id="安装mysql">安装mysql</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum <span class="operator"><span class="keyword">install</span> mysql-community-<span class="keyword">server</span></span></div></pre></td></tr></table></figure>
+
+<p>然后2次<code>y</code>就可以啦<br>到这里安装已经完成了</p>
+<h2 id="开启mysql">开启mysql</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root<span class="variable">@iZ23joghibeZ</span> ~]<span class="comment"># sudo service mysqld start</span></div></pre></td></tr></table></figure>
+
+<h2 id="查看mysql状态">查看mysql状态</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root<span class="variable">@iZ23joghibeZ</span> ~]<span class="comment"># sudo service mysqld status</span></div></pre></td></tr></table></figure>
+
+<h2 id="停止mysql">停止mysql</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root<span class="variable">@iZ23joghibeZ</span> ~]<span class="comment"># sudo service mysqld stop</span></div></pre></td></tr></table></figure>
+
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/08/28/test/" data-id="r1kc0mav0isbjide" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014/09/17/mysql安装/" data-id="9x3iyx3gnqccl64g" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Games/">Games</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PS3/">PS3</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CentOs/">CentOs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/yum/">yum</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/08/28/test/" class="article-date">
-  <time datetime="2014-08-28T03:07:53.000Z" itemprop="datePublished">8月 28 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/08/28/test/">test</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/08/28/test/" data-id="hmwui3gsrxfk6377" class="article-share-link">Share</a>
-      
-      
     </footer>
   </div>
   
@@ -281,7 +203,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -290,7 +212,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Games/">Games</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PS3/">PS3</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOs/">CentOs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yum/">yum</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -299,7 +221,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Games/" style="font-size: 20.00px;">Games</a><a href="/tags/PS3/" style="font-size: 20.00px;">PS3</a><a href="/tags/博客，文章/" style="font-size: 10.00px;">博客，文章</a>
+      <a href="/tags/CentOs/" style="font-size: 20.00px;">CentOs</a><a href="/tags/Games/" style="font-size: 10.00px;">Games</a><a href="/tags/PS3/" style="font-size: 10.00px;">PS3</a><a href="/tags/mysql/" style="font-size: 20.00px;">mysql</a><a href="/tags/yum/" style="font-size: 20.00px;">yum</a><a href="/tags/博客，文章/" style="font-size: 10.00px;">博客，文章</a>
     </div>
   </div>
 
@@ -308,7 +230,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08">August 2014</a><span class="archive-list-count">5</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09">September 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08">August 2014</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -320,19 +242,7 @@
       <ul>
         
           <li>
-            <a href="/2014/08/28/My-Gallery/">My Gallery</a>
-          </li>
-        
-          <li>
-            <a href="/2014/08/28/My-Gallery/">My Gallery</a>
-          </li>
-        
-          <li>
-            <a href="/2014/08/28/test/">新文章</a>
-          </li>
-        
-          <li>
-            <a href="/2014/08/28/test/">test</a>
+            <a href="/2014/09/17/mysql安装/">CentOs下yum安装mysql</a>
           </li>
         
           <li>
