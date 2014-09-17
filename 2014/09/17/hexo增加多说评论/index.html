@@ -5,24 +5,24 @@
   
   <title>hexo增加多说评论 | AsakiuGui blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="注册[多说]http://duoshuo.com/
+  <meta name="description" content="注册多说
 网上找了很多资料,都说编辑themes/landscape/layout/_partial/comment.ejs就可以了,但是我发现landscape模板中根本没有没有这个文件= =
 于是找到themes/landscape/layout/_partial/article.ejs中,文件结尾加入
-123&lt;% if (!index) { %">
+123&lt;% if (!index) { %&gt;	&lt;%- partial('">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo增加多说评论">
 <meta property="og:url" content="http://yoursite.com/2014/09/17/hexo增加多说评论/">
 <meta property="og:site_name" content="AsakiuGui blog">
-<meta property="og:description" content="注册[多说]http://duoshuo.com/
+<meta property="og:description" content="注册多说
 网上找了很多资料,都说编辑themes/landscape/layout/_partial/comment.ejs就可以了,但是我发现landscape模板中根本没有没有这个文件= =
 于是找到themes/landscape/layout/_partial/article.ejs中,文件结尾加入
-123&lt;% if (!index) { %">
+123&lt;% if (!index) { %&gt;	&lt;%- partial('">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo增加多说评论">
-<meta name="twitter:description" content="注册[多说]http://duoshuo.com/
+<meta name="twitter:description" content="注册多说
 网上找了很多资料,都说编辑themes/landscape/layout/_partial/comment.ejs就可以了,但是我发现landscape模板中根本没有没有这个文件= =
 于是找到themes/landscape/layout/_partial/article.ejs中,文件结尾加入
-123&lt;% if (!index) { %">
+123&lt;% if (!index) { %&gt;	&lt;%- partial('">
 
   
     <link rel="alternative" href="/atom.xml" title="AsakiuGui blog" type="application/atom+xml">
@@ -101,7 +101,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>注册[多说]<a href="http://duoshuo.com/" target="_blank" rel="external">http://duoshuo.com/</a></p>
+        <p>注册<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a></p>
 <p>网上找了很多资料,都说编辑<code>themes/landscape/layout/_partial/comment.ejs</code>就可以了,但是我发现landscape模板中根本没有没有这个文件= =</p>
 <p>于是找到<code>themes/landscape/layout/_partial/article.ejs</code>中,文件结尾加入</p>
 <figure class="highlight nodejs"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (!index) { <span class="variable">%&gt;</span></div><div class="line">	&lt;<span class="variable">%-</span> partial(<span class="string">'comment'</span>) <span class="variable">%&gt;</span></div><div class="line">&lt;% } <span class="variable">%&gt;</span></div></pre></td></tr></table></figure>
